@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.loginRegisterForget.login.LoginController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1017.0">
+         <center>
+            <AnchorPane fx:id="loginAnchor" prefHeight="637.0" prefWidth="752.0" style="-fx-background-color: e4ebf2;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="mainLoginAnchor" layoutX="27.0" layoutY="133.0">
+                     <children>
+                        <VBox layoutX="50.0" layoutY="145.0" prefHeight="224.0" prefWidth="487.0">
+                           <children>
+                              <Region prefHeight="12.0" prefWidth="550.0" />
+                              <JFXTextField alignment="CENTER" labelFloat="true" promptText="Login Name">
+                                 <font>
+                                    <Font name="Andalus" size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Region layoutX="10.0" layoutY="10.0" prefHeight="36.0" prefWidth="550.0" />
+                              <JFXPasswordField alignment="CENTER" labelFloat="true" promptText="Password">
+                                 <font>
+                                    <Font name="Andalus" size="16.0" />
+                                 </font>
+                              </JFXPasswordField>
+                              <Region layoutX="10.0" layoutY="72.0" prefHeight="10.0" prefWidth="550.0" />
+                              <JFXButton onAction="#setOnForget" prefHeight="31.0" prefWidth="290.0" text="Forget Password">
+                                 <font>
+                                    <Font name="Comic Sans MS Italic" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="40.0" left="260.0" right="20.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                              <JFXButton onAction="#onLogin" prefHeight="51.0" prefWidth="550.0" text="Login ......">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="24.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                        <Label layoutY="68.0" prefHeight="40.0" prefWidth="101.0" text="Login">
+                           <font>
+                              <Font name="Impact" size="32.0" />
+                           </font>
+                        </Label>
+                        <JFXButton layoutX="374.0" onAction="#setOnRegister" prefHeight="38.0" prefWidth="295.0" text="New Registration">
+                           <font>
+                              <Font name="Garamond" size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="2.0" layoutY="30.0" prefHeight="49.0" prefWidth="694.0" text="STUDENT RESULT PREPARATION AND RECORD MAINTAINER">
+                     <font>
+                        <Font name="Bradley Hand ITC" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="indentityUser" layoutX="14.0" layoutY="98.0" prefHeight="35.0" prefWidth="304.0">
+                     <font>
+                        <Font name="Forte" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+         <left>
+            <VBox prefHeight="603.0" prefWidth="214.0" style="-fx-background-color: #e4ebf2;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="600.0" prefWidth="244.0" style="-fx-background-radius: 0 30 10 20; -fx-background-color: #8ed3f4;" stylesheets="@../../MainWindow/MainCss.css">
+                     <children>
+                        <Label layoutX="14.0" layoutY="93.0" prefHeight="48.0" prefWidth="241.0" text="Use System As: ">
+                           <font>
+                              <Font name="Comic Sans MS" size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXButton layoutX="1.0" layoutY="168.0" onAction="#setOnHead" prefHeight="43.0" prefWidth="260.0" text="Head">
+                           <font>
+                              <Font name="Garamond" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="2.0" layoutY="244.0" onAction="#setOnDEO" prefHeight="46.0" prefWidth="263.0" text="Data Entry Operator">
+                           <font>
+                              <Font name="Garamond" size="17.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

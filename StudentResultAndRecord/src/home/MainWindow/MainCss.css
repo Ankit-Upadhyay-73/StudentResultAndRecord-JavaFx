@@ -1,0 +1,100 @@
+.context-menu
+{
+    -fx-background-color:#10000C;
+}
+
+.menu.label
+{
+     -fx-text-fill:#efa747;
+}
+/*.glyph-icon
+{
+    -fx-fill:#efa747;
+}
+*/
+.OwnButton
+{
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-color:#efa747;
+}
+.table-view
+{
+    -fx-background-color:#e4ebf2;
+}
+.table-cell
+{
+    -fx-background-color:#e4ebf2;
+    -fx-text-fill:#000000;
+}
+.root{
+    -fx-background-color:#e4ebf2;
+}
+.button
+{
+    -fx-text-fill:#000000;
+}
+.text-area.content
+{
+    -fx-text-fill:#efa747;
+}
+.text-area
+{
+    -jfx-text-fill:#efa747;
+}
+
+.column-header
+{
+    -fx-background-color: #8ed3f4;
+    -fx-font-family: "Bell MT";
+    -fx-font-size: 16px;
+    -fx-text-fill: #10000C;
+}
+
+.text-field
+{
+    -fx-prompt-text-fill:#000000;
+    -fx-text-fill:#000000;
+    -jfx-focus-color:#000000;
+    -fx-alignment:"Center";
+    -fx-font-size:15px;
+}
+
+.jfx-combo-box
+{
+    -jfx-focus-color:#328DAA;
+    -fx-prompt-text-fill:#000000;
+    -fx-text-fill:#000000;
+    -jfx-unfocus-color:#328DAA;
+}
+
+.btn_hanger
+{
+    -fx-font-family:"System";
+    -fx-font-size:14px;
+    -fx-font-weight: bold;
+    -fx-background-color:#10000C;
+    -fx-text-fill: #efa747;
+}
+.glyph-icon{
+    -fx-fill:#efa747 ;
+}
+/* Hamburger Style */
+.jfx-hamburger-icon
+{
+  -fx-spacing:5;
+}
+
+.jfx-hamburger-icon StackPane
+{
+ 	-fx-background-color: #efa747;
+	-fx-background-radius:5px;
+}
+.label
+{
+    -fx-text-fill:#000000;
+}
+.anchor
+{
+      -fx-background-color:#e4ebf2;
+}

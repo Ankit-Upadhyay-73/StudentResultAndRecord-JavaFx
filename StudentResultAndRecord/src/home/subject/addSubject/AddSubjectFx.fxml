@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addSubjectAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="978.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.subject.addSubject.AddSubjectController">
+   <children>
+      <Pane layoutX="5.0" layoutY="56.0" prefHeight="470.0" prefWidth="209.0">
+         <children>
+            <ImageView fitHeight="164.0" fitWidth="200.0" layoutX="5.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXButton layoutX="5.0" layoutY="181.0" prefHeight="47.0" prefWidth="200.0" text="View Subject">
+               <font>
+                  <Font name="Centaur" size="17.0" />
+               </font></JFXButton>
+            <JFXButton layoutY="245.0" prefHeight="47.0" prefWidth="209.0" text="Edit Subject">
+               <font>
+                  <Font name="Centaur" size="18.0" />
+               </font></JFXButton>
+            <JFXButton layoutY="304.0" prefHeight="47.0" prefWidth="209.0" text="Remove Subject">
+               <font>
+                  <Font name="Centaur" size="18.0" />
+               </font></JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="214.0" layoutY="64.0" prefHeight="449.0" prefWidth="741.0">
+         <children>
+            <Label layoutX="14.0" layoutY="32.0" prefHeight="47.0" prefWidth="161.0" text="Add Subject">
+               <font>
+                  <Font name="Garamond" size="20.0" />
+               </font></Label>
+            <JFXComboBox labelFloat="true" layoutX="481.0" layoutY="32.0" prefHeight="30.0" prefWidth="219.0" promptText="Year of Course" />
+            <JFXComboBox labelFloat="true" layoutX="24.0" layoutY="79.0" prefHeight="30.0" prefWidth="174.0" promptText="No's Of Subject" />
+            <AnchorPane layoutX="31.0" layoutY="147.0" prefHeight="329.0" prefWidth="705.0">
+               <children>
+                  <VBox layoutX="14.0" layoutY="35.0" prefHeight="288.0" prefWidth="146.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="149.0" text="         Subject ID" />
+                        <Region layoutX="10.0" layoutY="10.0" prefHeight="18.0" prefWidth="146.0" />
+                        <TextField />
+                        <Region layoutX="10.0" layoutY="51.0" prefHeight="7.0" prefWidth="146.0" />
+                        <TextField layoutX="10.0" layoutY="58.0" />
+                        <Region layoutX="10.0" layoutY="83.0" prefHeight="7.0" prefWidth="146.0" />
+                        <TextField layoutX="10.0" layoutY="90.0" />
+                        <Region layoutX="10.0" layoutY="115.0" prefHeight="7.0" prefWidth="146.0" />
+                        <TextField layoutX="10.0" layoutY="122.0" />
+                        <Region layoutX="10.0" layoutY="147.0" prefHeight="7.0" prefWidth="146.0" />
+                        <TextField layoutX="10.0" layoutY="154.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="166.0" layoutY="36.0" prefHeight="288.0" prefWidth="425.0">
+                     <children>
+                        <Region prefHeight="0.0" prefWidth="425.0" />
+                        <Label prefHeight="38.0" prefWidth="434.0" text="                                                    Subject Name" />
+                        <Region layoutX="10.0" layoutY="10.0" prefHeight="9.0" prefWidth="425.0" />
+                        <TextField />
+                        <Region layoutX="10.0" layoutY="48.0" prefHeight="7.0" prefWidth="425.0" />
+                        <TextField layoutX="10.0" layoutY="57.0" />
+                        <Region layoutX="10.0" layoutY="82.0" prefHeight="7.0" prefWidth="425.0" />
+                        <TextField layoutX="10.0" layoutY="91.0" />
+                        <Region layoutX="10.0" layoutY="114.0" prefHeight="7.0" prefWidth="425.0" />
+                        <TextField layoutX="10.0" layoutY="121.0" />
+                        <Region layoutX="10.0" layoutY="146.0" prefHeight="7.0" prefWidth="425.0" />
+                        <TextField layoutX="10.0" layoutY="153.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="595.0" layoutY="36.0" prefHeight="288.0" prefWidth="94.0">
+                     <children>
+                        <Label prefHeight="34.0" prefWidth="93.0" text="Subject Weightage" />
+                        <Region prefHeight="12.0" prefWidth="94.0" />
+                        <TextField />
+                        <Region prefHeight="7.0" prefWidth="425.0" />
+                        <TextField layoutX="10.0" layoutY="53.0" />
+                        <Region layoutX="10.0" layoutY="78.0" prefHeight="7.0" prefWidth="425.0" />
+                        <TextField layoutX="10.0" layoutY="85.0" />
+                        <Region layoutX="10.0" layoutY="110.0" prefHeight="7.0" prefWidth="425.0" />
+                        <TextField layoutX="10.0" layoutY="117.0" />
+                        <Region layoutX="10.0" layoutY="142.0" prefHeight="7.0" prefWidth="425.0" />
+                        <TextField layoutX="10.0" layoutY="149.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="1010.0" style="-fx-border-color: #323353; -fx-border-radius: 20;">
+         <children>
+            <JFXButton fx:id="headerSubjectBtn" onAction="#onHeaderSubject" prefHeight="57.0" prefWidth="177.0" text="Subject">
+               <font>
+                  <Font name="Aparajita" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="headerStudentBtn" layoutX="10.0" layoutY="10.0" onAction="#onHeaderStudent" prefHeight="57.0" prefWidth="177.0" text="Student">
+               <font>
+                  <Font name="Aparajita" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="headerResultBtn" layoutX="10.0" layoutY="10.0" onAction="#onHeaderResult" prefHeight="57.0" prefWidth="177.0" text="Result">
+               <font>
+                  <Font name="Aparajita" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="headerRecordBtn" layoutX="10.0" layoutY="10.0" onAction="#onHeaderRecord" prefHeight="57.0" prefWidth="177.0" text="Record">
+               <font>
+                  <Font name="Aparajita" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="headerDataEntryOperatorBtn" layoutX="10.0" layoutY="10.0" onAction="#onHeaderDataEntryOperator" prefHeight="57.0" prefWidth="177.0" text="Data Entry Operator">
+               <font>
+                  <Font name="Aparajita" size="18.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#323353" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <Region prefHeight="58.0" prefWidth="128.0" />
+            <JFXButton fx:id="closeWindow" onAction="#setOnClose" prefHeight="57.0" prefWidth="52.0" text="  ">
+               <graphic>
+                  <FontAwesomeIconView glyphName="WINDOW_CLOSE" size="35.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

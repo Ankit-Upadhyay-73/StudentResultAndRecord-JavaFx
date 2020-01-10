@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="1091.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.record.RecordController">
+   <children>
+      <Pane layoutX="1.0" prefHeight="150.0" prefWidth="1035.0">
+         <children>
+            <Label layoutX="31.0" layoutY="28.0" prefHeight="39.0" prefWidth="101.0" text="Record">
+               <font>
+                  <Font name="Comic Sans MS" size="27.0" />
+               </font></Label>
+            <JFXComboBox labelFloat="true" layoutX="14.0" layoutY="89.0" prefHeight="39.0" prefWidth="147.0" promptText="Select Year" />
+            <HBox layoutX="203.0" layoutY="48.0" prefHeight="90.0" prefWidth="832.0">
+               <children>
+                  <Pane prefHeight="68.0" prefWidth="176.0">
+                     <children>
+                        <JFXButton prefHeight="49.0" prefWidth="176.0" text="Students In Selected_Year">
+                           <font>
+                              <Font name="Constantia" size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+                  <Region prefHeight="100.0" prefWidth="17.0" />
+                  <Pane prefHeight="68.0" prefWidth="176.0">
+                     <children>
+                        <JFXButton prefHeight="49.0" prefWidth="176.0" text="Result Created">
+                           <font>
+                              <Font name="Constantia" size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+                  <Region layoutX="186.0" layoutY="10.0" prefHeight="100.0" prefWidth="13.0" />
+                  <Pane prefHeight="68.0" prefWidth="201.0">
+                     <children>
+                        <JFXButton prefHeight="49.0" prefWidth="201.0" text="Failed Student">
+                           <font>
+                              <Font name="Constantia" size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+                  <Region prefHeight="100.0" prefWidth="16.0" />
+                  <Pane prefHeight="68.0" prefWidth="187.0">
+                     <children>
+                        <JFXButton prefHeight="39.0" prefWidth="187.0" text="Passed Student">
+                           <font>
+                              <Font name="Constantia" size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Line endX="934.0" layoutX="115.0" layoutY="157.0" startX="-100.0" />
+      <Pane layoutX="24.0" layoutY="178.0" prefHeight="396.0" prefWidth="1035.0">
+         <children>
+            <TableView layoutX="13.0" prefHeight="396.0" prefWidth="1024.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Student Id" />
+                <TableColumn prefWidth="433.0" text="Student Name" />
+                  <TableColumn prefWidth="215.0" text="Course_Name" />
+                  <TableColumn prefWidth="147.0" text="Year In College" />
+                  <TableColumn prefWidth="153.0" text="Pass/Fail" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <JFXButton fx:id="closeWindow" layoutX="1033.0" layoutY="4.0" onAction="#setOnClose" prefHeight="57.0" prefWidth="52.0" text="  ">
+         <graphic>
+            <FontAwesomeIconView glyphName="WINDOW_CLOSE" size="35.0" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

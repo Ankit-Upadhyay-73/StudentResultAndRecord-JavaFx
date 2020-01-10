@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="homeAnchorScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1439.0" stylesheets="@MainCss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.MainWindow.MainWindowController">
+   <children>
+      <Pane layoutX="-5.0" layoutY="-2.0" prefHeight="129.0" prefWidth="1444.0" style="-fx-background-color: #8ed3f4;">
+         <children>
+            <Label fx:id="homeClgName" layoutX="39.0" layoutY="26.0" prefHeight="42.0" prefWidth="783.0" text="College Name Or School Name">
+               <font>
+                  <Font name="Iskoola Pota" size="25.0" />
+               </font></Label>
+            <Label fx:id="annotateHomeHeadName" layoutX="418.0" layoutY="62.0" prefHeight="36.0" prefWidth="277.0" text="By HOD Name">
+               <font>
+                  <Font name="Yu Mincho Regular" size="15.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="homeSwithableContentLayout" layoutX="36.0" layoutY="149.0" prefHeight="467.0" prefWidth="1036.0">
+         <children>
+            <Pane fx:id="paneButtonsLayout" layoutX="200.0" layoutY="80.0" prefHeight="362.0" prefWidth="819.0">
+               <children>
+                  <HBox layoutX="33.0" layoutY="14.0">
+                     <children>
+                        <Pane>
+                           <children>
+                              <JFXButton fx:id="homeStudentBtn" onAction="#setOnHomeStudentClick" prefHeight="118.0" prefWidth="257.0" style="-fx-background-image: url(&quot;subject.png&quot;);" text="  ">
+                                 <graphic>
+                                    <Label prefHeight="52.0" prefWidth="103.0" text="Student">
+                                       <font>
+                                          <Font name="Centaur" size="25.0" />
+                                       </font>
+                                    </Label>
+                                 </graphic>
+                              </JFXButton>
+                              <ImageView fitHeight="118.0" fitWidth="69.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/icons8_students_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <JFXButton fx:id="homeSubjectBtn" onAction="#setOnHomeSubjectClick" prefHeight="118.0" prefWidth="257.0" text=" " textFill="#6687c44e">
+                           <graphic>
+                              <Pane prefHeight="119.0" prefWidth="251.0">
+                                 <children>
+                                    <Label layoutX="106.0" layoutY="29.0" prefHeight="42.0" prefWidth="104.0" text="Subject">
+                                       <font>
+                                          <Font name="Centaur" size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="118.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/subject_teacher_296637.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="homeResultBtn" onAction="#setOnHomeResultClick" prefHeight="118.0" prefWidth="257.0" text=" ">
+                           <graphic>
+                              <Pane prefHeight="119.0" prefWidth="251.0">
+                                 <children>
+                                    <Label layoutX="81.0" layoutY="39.0" prefHeight="42.0" prefWidth="90.0" text="Result">
+                                       <font>
+                                          <Font name="Centaur" size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="118.0" fitWidth="76.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/icons8_test_results_100px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="20.0" layoutY="180.0" prefHeight="118.0" prefWidth="736.0">
+                     <children>
+                        <Region prefHeight="118.0" prefWidth="127.0" />
+                        <JFXButton fx:id="homeRecordBtn" onAction="#setOnHomeRecordClick" prefHeight="118.0" prefWidth="257.0" text=" ">
+                           <graphic>
+                              <Pane prefHeight="119.0" prefWidth="251.0">
+                                 <children>
+                                    <Label layoutX="87.0" layoutY="34.0" prefHeight="36.0" prefWidth="100.0" text="Record">
+                                       <font>
+                                          <Font name="Centaur" size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="108.0" fitWidth="69.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/icons8_report_card_100px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </JFXButton>
+                        <Region prefHeight="118.0" prefWidth="85.0" />
+                        <JFXButton fx:id="homeDataEntryOperatorBtn" onAction="#setOnHomeDEOClick" prefHeight="118.0" prefWidth="257.0" text=" ">
+                           <graphic>
+                              <Pane prefHeight="119.0" prefWidth="251.0">
+                                 <children>
+                                    <Label layoutX="83.0" layoutY="32.0" prefHeight="36.0" prefWidth="144.0" text="Data Entry Operators">
+                                       <font>
+                                          <Font name="Centaur" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="107.0" fitWidth="69.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/icons8_read_online_64px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <JFXButton layoutX="32.0" layoutY="14.0" onAction="#setOnSetting" prefHeight="69.0" prefWidth="105.0" text="  ">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_settings_60px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXDrawer fx:id="settingDrawerWind" defaultDrawerSize="206.0" layoutX="-3.0" layoutY="75.0" prefHeight="362.0" prefWidth="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="343.0" prefWidth="206.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.MainWindow.MainWindowController">
+   <children>
+      <Region prefHeight="42.0" prefWidth="206.0" />
+      <JFXButton prefHeight="58.0" prefWidth="214.0" text="Personal Information">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+      </JFXButton>
+      <Region layoutX="10.0" layoutY="10.0" prefHeight="16.0" prefWidth="206.0" />
+      <JFXButton prefHeight="56.0" prefWidth="206.0" text="Setting For College Or School">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+      </JFXButton>
+      <Region layoutX="10.0" layoutY="72.0" prefHeight="16.0" prefWidth="206.0" />
+      <JFXButton prefHeight="59.0" prefWidth="206.0" text="Help &amp; Support">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+      </JFXButton>
+      <Region layoutX="10.0" layoutY="131.0" prefHeight="16.0" prefWidth="206.0" />
+      <JFXButton prefHeight="51.0" prefWidth="209.0" text="Logout">
+         <font>
+            <Font name="Book Antiqua Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</VBox>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="355.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.subject.editSubject.removeSubject.RemoveSubjectController">
+   <children>
+      <Label layoutX="14.0" layoutY="20.0" prefHeight="34.0" prefWidth="135.0" text="Remove Subject">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font></Label>
+      <JFXButton layoutX="403.0" layoutY="16.0" prefHeight="34.0" prefWidth="60.0" text="  ">
+         <graphic>
+            <FontAwesomeIconView glyphName="WINDOW_CLOSE" size="35" wrappingWidth="42.0" />
+         </graphic>
+      </JFXButton>
+      <Pane layoutX="82.0" layoutY="104.0" prefHeight="231.0" prefWidth="378.0">
+         <children>
+            <VBox layoutY="56.0" prefHeight="162.0" prefWidth="348.0">
+               <children>
+                  <Region prefHeight="13.0" prefWidth="274.0" />
+                  <JFXTextField labelFloat="true" prefHeight="30.0" prefWidth="274.0" promptText="Subject Name">
+                     <font>
+                        <Font name="Andalus" size="15.0" />
+                     </font></JFXTextField>
+                  <Region layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="274.0" />
+                  <JFXTextField labelFloat="true" layoutX="10.0" layoutY="17.0" prefHeight="31.0" prefWidth="316.0" promptText="Subject Year">
+                     <font>
+                        <Font name="Andalus" size="15.0" />
+                     </font></JFXTextField>
+                  <Region layoutX="10.0" layoutY="42.0" prefHeight="15.0" prefWidth="274.0" />
+                  <JFXButton prefHeight="44.0" prefWidth="352.0" text="Remove">
+                     <font>
+                        <Font name="Book Antiqua" size="15.0" />
+                     </font></JFXButton>
+               </children>
+            </VBox>
+            <JFXTextField labelFloat="true" layoutY="2.0" prefHeight="25.0" prefWidth="181.0" promptText="Subject Id">
+               <font>
+                  <Font name="Andalus" size="15.0" />
+               </font></JFXTextField>
+            <JFXButton layoutX="186.0" layoutY="2.0" prefHeight="25.0" prefWidth="52.0" text=" ">
+               <graphic>
+                  <MaterialDesignIconView glyphName="FILE_RESTORE" size="40" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</Pane>
